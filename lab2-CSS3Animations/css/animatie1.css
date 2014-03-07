@@ -1,0 +1,63 @@
+.bol1 {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;	
+	position: absolute;
+	background-color: red;
+
+}
+
+.bol2 {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: absolute;
+	background-color: blue;
+
+}
+
+.bol3 {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: absolute;
+	background-color: yellow;
+
+}
+
+.animatie1 {
+     -webkit-animation: moveIt 1s;
+     -webkit-animation-fill-mode: forwards;
+}
+
+.animatie2 {
+    -webkit-animation: moveIt2 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.animatie3 {
+    -webkit-animation: moveIt3 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes moveIt
+{
+ 0% {left:0%; top:10px;}
+ 100% { left:100px; top:10px;}
+ 
+}
+
+@-webkit-keyframes moveIt2
+{
+ 0% {left:0%; top:10px;}
+ 100% { left:100px; top:100px;}
+ 
+}
+
+@-webkit-keyframes moveIt3
+{
+ 0% {left:0%; top:10px;}
+ 100% { top:100px;}
+ 
+}
