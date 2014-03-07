@@ -7,6 +7,16 @@
 <body>
 	<script>
 			navigator.geolocation.getCurrentPosition(success, error);
+			function success(position)
+			{
+				alert(position);
+
+			}
+			function error()
+			{
+					alert("does not work");
+
+			}
 	</script>
 
 	
