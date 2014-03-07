@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript advanced</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+            
+          <h1>IMD To-Do list</h1>  
+            <form action="post">
+                <input type="text" value="add todo">
+            </form>  
+
+            <ul>
+                <li id="todo1" class="highP">Learn about GIT</li>
+                <li id="todo2" class ="highP">Experiment with CSS animations</li>
+                <li id="todo3" class ="mediumP">Javascript advanced</li>
+                <li id="todo4" class ="lowP">Project2</li>
+            </ul>
+    </div>
+    <script>
+        // FRAMEWORK
+
+        // IMDelement vervangt htmlelement.prototype -> wrapper object
+        var IMDelement = function(element)
+        {
+            this.element = element;
+            this.isArray = (element.length > 1) ? true : false;
+        }
+
+        // FUNCTIE VOOR CLASSE AAN TE MAKEN (wnr gedaan is)
+        IMDelement.prototype.addClass = function(p_class)
+        {
+            if(this.isArray) //meerdere elementen
+            {
+                for (var i = 0, j = this.element.length; i < j; i++)
+                {
+                    this.element[i].className = this.element[i].className + " " + p_class;
+                };
+            }
+            else
+            {
+                    this.element.className = this.element.className + " " + p_class;
+            }
+            return this;
+        }
+        // CLICK FUNCTIE
+        IMDelement.prototype.click = function(p_click)
+        {
+            if(this.isArray)
+            {
+                for(var i=0, j=this.element.length; i<j; i++)
+                {
+                    this.element[i].addEventListener('click', p_click);
+                    console.log(this.element[i]);
+                }
+            }
+            else
+            {
+                this.element.addEventListener('click', p_click);
+            }
+            return this;
+        }
+
+
+        // grab/select functie
+       var $ = function(p_element) {
+            var firstCharacter = p_element.charAt(0);
+            var result;
+            
+            switch(firstCharacter){
+
+                case "#":
+                    var idToSelect = p_element.substring(1,p_element.length);
+                    var element = document.getElementById(idToSelect);
+                    var result = new IMDelement(element);
+
+                break;
+
+                case ".":
+                    var classToSelect = p_element.substring(1,p_element.length);
+                    var elements = document.getElementsByClassName(classToSelect);
+                    var result = new IMDelement(elements);
+
+               break;
+
+               default:
+                var elements = document.getElementsByTagName(p_element);
+                var result = new IMDelement(elements);
+
+            }
+            return result;
+ 
+       }
+        //  CODE CLICK WHEN DONE
+        $("li").click(function(){
+            new IMDelement(this).addClass("done");
+        });
+
+    </script>
+</body>
+</html>
