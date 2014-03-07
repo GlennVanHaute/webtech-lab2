@@ -1,0 +1,81 @@
+<!--           var result = document.getElementById(p_element);
+           return result; -->
+
+<!-- 
+// WORD CODE SOUP, WE WILLEN HET MODULAIR OPBOUWEN(professioneel)
+            // function markAsDone (elementid, important) {
+            //     var item = document.getElementById(elementid);
+            //     item.style.color = "#aaa";
+            //     item.style.textDecoration ="line-through"; 
+
+            //     if(important === true){
+            //         item.style.color ="red";
+            //     }
+            // }
+            // markAsDone("todo1");
+            // markAsDone("todo2", true);
+            // markAsDone("todo3");
+
+
+            // //mark list item als done (line-through and gray)
+            // var item1 = document.getElementById("todo1");
+            // console.log(item1);
+            // item1.style.color = "#aaa";
+            // item1.style.textDecoration = "line-through";
+            
+            // var item2 = document.getElementById("todo2");
+            // console.log(item2);
+            // item1.style.color = "#aaa";
+            // item1.style.textDecoration = "line-through";
+            
+            // var item3 = document.getElementById("todo3");
+            // console.log(item3);
+            // item1.style.color = "#aaa";
+            // item1.style.textDecoration = "line-through";
+
+
+                   HTMLElement.prototype.color = function(p_color)
+       {
+            
+            this.style['color'] = p_color;
+       }
+
+              var Person = function(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+
+            this.sayName = function()
+            {
+                console.log("Hi, my name is " + this.firstname + " " + this. lastname);
+            }
+       }
+
+    Person.prototype.sayHi = function()
+    {
+        alert('hi');
+    }
+
+       var steve = new Person ("Steve", "Jobs");
+       var bill = new Person("Bill", "Gates");
+
+       steve.sayName();
+       bill.sayName();
+       steve.sayHi();
+
+
+
+       var.IMDelement = function(element)
+        {
+            this.element = element;
+            // VERVANGEN
+            // if (element.length > 1)
+            // {
+            //     var isArray = true
+            // }
+            // else
+            // {
+            //     var isArray = false
+            // }
+            this.isArray = (element.length > 1) ? true : false;
+        }
+ -->

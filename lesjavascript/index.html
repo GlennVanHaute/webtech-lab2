@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript advanced</title>
+</head>
+<body>
+    
+    <div class="container">
+            
+          <h1>Welcome</h1>      
+            <ul>
+                <li id="todo1">Learn about GIT</li>
+                <li id="todo2" class ="todo">Experiment with CSS animations</li>
+                <li id="todo3" class ="todo">Javascript advanced</li>
+            </ul>
+    </div>
+    <script>
+        // FRAMEWORK
+
+        // IMDelement vervangt htmlelement.prototype -> wrapper object
+        var IMDelement = function(element)
+        {
+            this.element = element;
+            this.isArray = (element.length > 1) ? true : false;
+        }
+        IMDelement.prototype.color = function(p_color)
+        {
+            if (this.isArray) {
+              for(var i = 0, l =this.element.length; i<l ; i++)
+              {
+                this.element[i].style['color'] = p_color;
+              }
+            }
+            else 
+            {
+             this.element.style['color'] = p_color;
+            }
+            return this.element;
+
+        }
+
+        // grab/select functie
+       var $ = function(p_element) {
+            var firstCharacter = p_element.charAt(0);
+            var result;
+            
+            switch(firstCharacter){
+                case "#":
+                    var idToSelect = p_element.substring(1,p_element.length);
+                    var element = document.getElementById(idToSelect);
+                    var result = new IMDelement(element);
+
+                break;
+                case ".":
+                    var classToSelect = p_element.substring(1,p_element.length);
+                    var elements = document.getElementsByClassName(classToSelect);
+                    var result = new IMDelement(elements);
+
+               break;
+               case "li"
+
+            }
+            return result;
+ 
+       }
+
+       //EIGEN CODE
+       $("#todo1").color("yellow");
+       $('.todo').color("red");
+
+
+
+            
+    </script>
+</body>
+</html>
