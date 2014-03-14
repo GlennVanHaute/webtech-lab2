@@ -2,12 +2,64 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WeatherApp</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1 id="header">Weer Applicatie</h1>
+
+	<div class="container">
+		
+	<div class="row zwart">
+			<div class="col-md-1"></div>
+			<div class="col-md-11"><h1 id="header">België</h1></div>		
+		</div>
+
+		<div class="row beige">
+			<div class="col-md-4 beige"></div>
+			<div class="col-md-4  kader">
+				<div id="weer"></div>
+				<img id="icoon"/>
+			</div>
+			<div class="col-md-4 beige"></div>
+		</div>
+
+		<div class="row">
+			
+			<div class="col-md-8 info">
+
+				
+				<div id="omschrijving"></div>
+				<div id="min"></div>
+				<div id="max"></div>
+				<div id="windkracht"></div>
+			</div> 
+
+			<div class="col-md-2"></div>
+		</div>
+
+		
+
+
+	</div>
+	
+	
+
+
+
+
+	<!-- HIER BEGINT DE CODE VAN JAVASCRIPT VOOR API -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
 	<script type="text/javascript">
+	// DIVS OPHALEN EN VARIABELEN VAN MAKEN
+	var dag = document.getElementById('dag');
+	var maand = document.getElementById('maand');
+	var weer = document.getElementById('weer');
+	var omschrijving = document.getElementById('omschrijving');
+	var icoon = document.getElementById('icoon');
+	var windkracht = document.getElementById('windkracht');
+
 	$( document ).ready(function() {
 		function getLocation()
 		  {
@@ -46,6 +98,37 @@
     // work with the response
     success: function( response ) {
         console.log( response ); // server response
+        windkracht.innerHTML = "windkracht: " + response.currently.windSpeed;
+        weer.innerHTML = Math.round((response.currently.temperature - 32)/1.8) + " <strong>&degC</strong>";
+					omschrijving.innerHTML = response.daily.data[1].summary;
+					min.innerHTML = "Min: " + Math.round((response.daily.data[1].temperatureMin-32)/1.8) + " &degC";
+					max.innerHTML = "Max: " + Math.round((response.daily.data[1].temperatureMax-32)/1.8)+ " &degC";
+
+					var i = response.currently.icon;
+					switch(i){
+						case "clear-day":
+							icoon.src="http://www.iconsdb.com/icons/preview/black/sun-xxl.png";
+							break;
+
+						case "clear-night":
+							icoon.src="http://www.iconsdb.com/icons/preview/black/moon-xxl.png";
+							break;
+
+						case "partly-cloudy-day":
+							icoon.src="http://www.iconsdb.com/icons/preview/black/partly-cloudy-day-xxl.png";
+							break;
+
+						case "partly-cloudy-night":
+							icoon.src="http://www.iconsdb.com/icons/preview/black/partly-cloudy-night-xxl.png";
+							break;
+
+						case "wind":
+							icoon.src="http://www.iconsdb.com/icons/preview/black/little-rain-xxl.png";
+							break;
+
+						default:
+							icoon.src="http://www.iconsdb.com/icons/preview/black/clouds-xxl.png";
+					}
     }
 });
 		}

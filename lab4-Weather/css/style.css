@@ -1,0 +1,34 @@
+body{
+	background-color: #bc1414;
+	color: white;
+}
+h1{
+
+}
+.kader {
+	height: 400px;
+	background-color: #eadd6a;
+	padding: 15px;
+}
+.info {
+	font-size: 3em;
+}
+.zwart  {
+	background-color: black;
+
+}
+#weer {
+	font-size: 5em;
+	font-weight: bold;
+	float: left;
+	position: absolute;
+
+}
+#icoon {
+	margin-top: 50px;
+	margin-left: 15px;
+	position: absolute;
+}
+.beige  {
+	background-color: #eadd6a;
+	}
