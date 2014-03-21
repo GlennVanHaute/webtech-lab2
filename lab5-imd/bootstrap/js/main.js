@@ -49,27 +49,28 @@ $( document ).ready(function() {
 		var i = response.currently.icon;
 					switch(i){
 						case "clear-day":
-							ico.src="http://www.iconsdb.com/icons/preview/black/sun-xxl.png";
+							ico.src="http://www.iconsdb.com/icons/preview/black/sun-m.png";
 							break;
 
 						case "clear-night":
-							ico.src="http://www.iconsdb.com/icons/preview/black/moon-xxl.png";
+							ico.src="http://www.iconsdb.com/icons/preview/black/moon-m.png";
 							break;
 
 						case "partly-cloudy-day":
-							ico.src="http://www.iconsdb.com/icons/preview/black/partly-cloudy-day-xxl.png";
+							ico.src="http://www.iconsdb.com/icons/preview/black/partly-cloudy-day-m.png";
 							break;
 						case "partly-cloudy-night":
-							ico.src="http://www.iconsdb.com/icons/preview/black/partly-cloudy-night-xxl.png";
+							ico.src="http://www.iconsdb.com/icons/preview/black/partly-cloudy-night-m.png";
 							break;
 						case "wind":
-							ico.src="http://www.iconsdb.com/icons/preview/black/little-rain-xxl.png";
+							ico.src="http://www.iconsdb.com/icons/preview/black/little-rain-m.png";
 							break;
 						default:
-							ico.src="http://www.iconsdb.com/icons/preview/black/clouds-xxl.png";
+							ico.src="http://www.iconsdb.com/icons/preview/black/clouds-m.png";
 					}
 
 					var temperatuur = Math.round((response.currently.temperature - 32)/1.8)
+					
 
 					switch(true){
 						   	case temperatuur < -20:
@@ -81,14 +82,12 @@ $( document ).ready(function() {
 						   	case temperatuur  < -10:
 						      $('body').css("background-color", "#7ba3fa");
 						      break;
-
 						  	case temperatuur  < -5:
 						      $('body').css("background-color", "#3ad5f4");
 						      break;
 						    case temperatuur  < 0:
 						      $('body').css("background-color", "#ffffff");
 						      break;
-
 						    case temperatuur  < 5:
 						      $('body').css("background-color", "#33eda2");
 						      break;

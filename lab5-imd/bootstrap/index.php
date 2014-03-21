@@ -30,15 +30,21 @@
 	<div class="container">
 
 			<div class="row">
-				<div class="col-md-12">
-					<div class="weareimd">
-							<img src="img/logobg.jpg" alt="logo we are imd">					
-					</div>
-					<div class="logo"> 
-							<img src="img/logonobg.png" alt="logo we are imd">
-					</div>
-
+				<div class="kader">
+					<h1>We Are IMD!</h1>
 				</div>
+				<div class="col-md-12">
+					<div class="moveleft">
+						<div class="weareimd">
+								<img src="img/logobg.jpg" alt="logo we are imd">					
+						</div>
+						<div class="logo"> 
+								<img src="img/logonobg.png" alt="logo we are imd">
+						</div>
+					</div>
+				</div>
+
+
 			</div>	
 			<div class="push"></div>
 			<div class="row">

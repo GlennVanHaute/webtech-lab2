@@ -23,12 +23,42 @@
 		background-color: red;
 }
 #weer {
-	font-size: 2.5em;
+	font-size: 3em;
+	font-weight: bolder;
 	float: left;
 }
 #icon {
 	float: left;
 }
+
+
+
+
+
+.push{
+	height: 180px;
+	float: left;
+}
+#icoon {
+	padding-left: 15px;
+}
+.kader {
+	width: 500px;
+	height:100px;
+	margin-left: 60px;
+	margin-top: 50px;
+	position: absolute;
+	background-color: #333;
+	
+}
+.kader h1{
+	color: white;
+	margin-left: 100px;
+	margin-top: 30px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
 /*
 hier is animatie voor logo*/
 
@@ -43,15 +73,35 @@ float: left;
 }
 
 .weareimd {
-    -webkit-animation: flipInY 1s;
+    -webkit-animation: flipInY 2s;
     -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes flipInY
 {
-    0% { -webkit-transform:  rotate(0deg); opacity: 1;}
-	100% { -webkit-transform:  rotate(-45deg); opacity: 1;}
+    
+
+	0% { -webkit-transform:  rotate(0deg); opacity: 1;}
+	100% {-webkit-transform:  rotate(-45deg);}
+
 }
+.moveleft{
+	margin-left: 150px;
+}
+.moveleft{
+    -webkit-animation: moveleft 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveleft
+{
+    150
+	150% { -webkit-transform:  translateX(0px);}
+	50% {-webkit-transform:  translateX(0px);}
+	100%{-webkit-transform:  translateX(-150px);}
+
+}
+
 
 .logo {
 	margin-top: 50px;
@@ -73,7 +123,3 @@ float: left;
 	100% { -webkit-transform:  rotate(0deg); opacity: 1;}
 }
 
-.push{
-	height: 180px;
-	float: left;
-}
