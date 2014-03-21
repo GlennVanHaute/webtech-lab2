@@ -49,9 +49,8 @@
 			<div class="push"></div>
 			<div class="row">
 			<div class="col-md-12">
-				<h1>Een passie voor het web & apps?</h1>
+				<h1><div id="infoweer"></div></h1>
 
-				<h1>Kom dan mee een ter<span>app</span>ke doen!</h1>
 				</div>
 			</div>
 			<div class="row">
@@ -68,7 +67,8 @@
 						<br/>
 						Dan ben jij een perfecte kandidaat voor onze opleiding Interactieve Multimedia Design.
 					</p>
-
+					<p>
+					</p>
 					<p>
 						Kom mee een terraske doen aan onze Creativity Gym en neem meteen een kijkje in onze opleiding aan de Thomas More hogeschool in Mechelen.
 

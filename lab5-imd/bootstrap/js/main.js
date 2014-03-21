@@ -75,39 +75,51 @@ $( document ).ready(function() {
 					switch(true){
 						   	case temperatuur < -20:
 						      $('body').css("background-color", "#db6eeb");
+						      $('#infoweer').html("Brrrr! Het is momenteel veel te koud voor een terrAppke");
 						      break;
 						  	 case temperatuur < -15:
 						      $('body').css("background-color", "#a886f4");
+						      $('#infoweer').html("Brrrr! Het is momenteel veel te koud voor een terrAppke");
 						      break;
 						   	case temperatuur  < -10:
 						      $('body').css("background-color", "#7ba3fa");
+						      $('#infoweer').html("Brrrr! Het is momenteel veel te koud voor een terrAppke");
 						      break;
 						  	case temperatuur  < -5:
 						      $('body').css("background-color", "#3ad5f4");
+						      $('#infoweer').html("Brrrr! Het is momenteel veel te koud voor een terrAppke");
 						      break;
 						    case temperatuur  < 0:
 						      $('body').css("background-color", "#ffffff");
+						      $('#infoweer').html("Brrrr! Het is momenteel veel te koud voor een terrAppke");
 						      break;
 						    case temperatuur  < 5:
 						      $('body').css("background-color", "#33eda2");
+						      $('#infoweer').html("Brrrr! Het is momenteel veel te koud voor een terrAppke");
 						      break;
 						    case temperatuur  < 10:
 						      $('body').css("background-color", "#6ff12f");
+						       $('#infoweer').html("Dit is al beter weer, maar momenteel nog steeds niet echt het ideaale weer voor een terrAppke te doen ")
 						      break;
 						    case temperatuur  < 15:
 						      $('body').css("background-color", "#d5fa0e");
+						      $('#infoweer').html("Bijna het ideaale weer voor een terAppke te doen maar het is nog net iets te koud")
 						      break;
 						    case temperatuur  < 20:
 						      $('body').css("background-color", "#cbf100");
+						      $('#infoweer').html("Mooi! dit is schitterend weer om een terAppke te doen!")
 						      break;
 						    case temperatuur  < 25:
 						      $('body').css("background-color", "#d7e10e");
+						      $('#infoweer').html("Mooi! dit is schitterend weer om een terAppke te doen! Maar ben je wel zeker je een trui wil aandoen?")
 						      break;
 						    case temperatuur  < 30:
 						      $('body').css("background-color", "#ffc708");
+						      $('#infoweer').html("Het ideaale weer om een terAppke te doen, vergeet je zonnecreme alvast maar niet aan te doen!")
 						      break;
 						    case temperatuur  < 35:
 						      $('body').css("background-color", "#ff743c");
+						      $('#infoweer').html("Wow, niet verwacht het zo'n mooi weer kon zijn in België! Waar wacht je op? het ideaale weer voor een terAppke")
 						      break;
 
 
