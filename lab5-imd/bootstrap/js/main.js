@@ -3,7 +3,7 @@ $( document ).ready(function() {
 		var w=document.getElementById('weer');
 
 		var ico=document.getElementById('icoon');
-
+		
 
 		
 	
@@ -68,9 +68,55 @@ $( document ).ready(function() {
 						default:
 							ico.src="http://www.iconsdb.com/icons/preview/black/clouds-xxl.png";
 					}
-					if (Math.round((response.currently.temperature - 32)/1.8) < 15) {
-						$('body').css("background-color", "#FC9D0A");
-					};
+
+					var temperatuur = Math.round((response.currently.temperature - 32)/1.8)
+
+					switch(true){
+						   	case temperatuur < -20:
+						      $('body').css("background-color", "#db6eeb");
+						      break;
+						  	 case temperatuur < -15:
+						      $('body').css("background-color", "#a886f4");
+						      break;
+						   	case temperatuur  < -10:
+						      $('body').css("background-color", "#7ba3fa");
+						      break;
+
+						  	case temperatuur  < -5:
+						      $('body').css("background-color", "#3ad5f4");
+						      break;
+						    case temperatuur  < 0:
+						      $('body').css("background-color", "#ffffff");
+						      break;
+
+						    case temperatuur  < 5:
+						      $('body').css("background-color", "#33eda2");
+						      break;
+						    case temperatuur  < 10:
+						      $('body').css("background-color", "#6ff12f");
+						      break;
+						    case temperatuur  < 15:
+						      $('body').css("background-color", "#d5fa0e");
+						      break;
+						    case temperatuur  < 20:
+						      $('body').css("background-color", "#cbf100");
+						      break;
+						    case temperatuur  < 25:
+						      $('body').css("background-color", "#d7e10e");
+						      break;
+						    case temperatuur  < 30:
+						      $('body').css("background-color", "#ffc708");
+						      break;
+						    case temperatuur  < 35:
+						      $('body').css("background-color", "#ff743c");
+						      break;
+
+
+
+
+						}
+
+				
     }
 });
 		}

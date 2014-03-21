@@ -23,11 +23,24 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
-	<script type="text/javascript" src="js/main.js">	</script>
+<script type="text/javascript" src="js/main.js">	</script>
 
 </head>
 <body>
 	<div class="container">
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="weareimd">
+							<img src="img/logobg.jpg" alt="logo we are imd">					
+					</div>
+					<div class="logo"> 
+							<img src="img/logonobg.png" alt="logo we are imd">
+					</div>
+
+				</div>
+			</div>	
+			<div class="push"></div>
 			<div class="row">
 			<div class="col-md-12">
 				<h1>Een passie voor het web & apps?</h1>

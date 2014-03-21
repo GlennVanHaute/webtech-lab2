@@ -29,3 +29,51 @@
 #icon {
 	float: left;
 }
+/*
+hier is animatie voor logo*/
+
+.weareimd {
+		margin-top: 50px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+border-style:solid;
+float: left;
+
+}
+
+.weareimd {
+    -webkit-animation: flipInY 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes flipInY
+{
+    0% { -webkit-transform:  rotate(0deg); opacity: 1;}
+	100% { -webkit-transform:  rotate(-45deg); opacity: 1;}
+}
+
+.logo {
+	margin-top: 50px;
+	position: absolute;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+.logo {
+    -webkit-animation: stay 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes stay
+{
+    0% { -webkit-transform:  rotate(0deg); opacity: 1;}
+	100% { -webkit-transform:  rotate(0deg); opacity: 1;}
+}
+
+.push{
+	height: 180px;
+	float: left;
+}
