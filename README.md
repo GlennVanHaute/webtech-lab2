@@ -14,4 +14,5 @@ webtech-lab2
 * Lab 4: Weather app.
     Leren werken met api's. Een weer applicatie gemaakt.
     -> moet nog localstorage leren // aanpassen
-*lab 5: IMD terAppke
+
+* Lab 5: IMD terAppke
