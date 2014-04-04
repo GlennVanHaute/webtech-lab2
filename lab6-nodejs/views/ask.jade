@@ -1,14 +1,16 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
-    h1 Ask a question
+extends layout
+
+block content
+  div.header
+    h1= title
+
+  div.container
     form
-    label.label(for='Gebruiker')  Gebruiker
-    input.input(id='Gebruiker',type='text',value=Gebruiker,name='Gebruiker', placeholder="Naam") 
-    label.label(for='vraag')  Wat is je vraag
-    input.input(id='vraag',type='textarea',value='',name='vraag', placeholder="vraag")
-    input.input(id='button',type='submit',value='Vraag',name='vraag')
+      p.error
+      input(type='text' name='naam', id='naam', placeholder='insert your name here')
+      textarea(rows='5', name='vraag', id='vraag', placeholder='Ask  your question here!')
+      input(type='submit', id='verzend', value="Ask away")
+
+  section#allevragen
+
+

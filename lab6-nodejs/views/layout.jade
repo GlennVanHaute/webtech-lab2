@@ -1,7 +1,13 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Node.js
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/screen.css')
+    //- Jquery eerst inladen!
+    script(src='http://code.jquery.com/jquery-1.11.0.min.js')
+    script(src='../javascripts/faye/browser/faye-browser.js')
+    script(src='../javascripts/customscript.js')
+
   body
     block content
