@@ -36,14 +36,19 @@ We also learned to animate in CSS3 with keyframes. The 2 exercises in "lab2" are
     
 LAb 3: To Do-list. 
 ----
-    Onze eigen Framework geschreven om een To do-list te maken via javascript. 
+In this lab we created our own Framework in order to make our own To-Do-List, very interesting!
     
 Lab 4: Weather app.
 ----
-Leren werken met api's. Een weer applicatie gemaakt.
--> moet nog localstorage leren // aanpassen
+Here we learned to work with Api's and made a mini weather application as demo.
 
 Lab 5: IMD terAppke
 ----
+Was a combination of bootstrap and Api's.
 
+Lab 6: node.js
+----
+
+This was in my opinion a very tough course, had to aska lot of help from ziggy and I will use this eastern holidays to become better in node.js since it is very interesting.
+usefull links:
 [Flat ui colors for fast development](http://flatuicolors.com/)
