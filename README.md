@@ -12,7 +12,7 @@ In our first class of webtech 2 we started of to learn to work with Git. We lear
     git add ( This command is to add your changes )
     git commit -m "message" ( This command commits your added things, don't forget the message! )
     git push ( this command pushes your work to github )
-**Here are some commands when you fork a repositorie:**
+**Here are some commands when you fork a repository:**
 
     git fetch upstream
     git remote add upstream -reponame-
