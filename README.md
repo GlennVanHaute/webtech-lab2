@@ -27,9 +27,12 @@ In our first class of webtech 2 we started of to learn to work with Git. We lear
 
 Lab 2: CSS animations.
 ----
-* Onze eerste animaties met CSS3. 
-    geleerd hoe we moeten animeren op 2 verschillende manieren!
-    Het liefste werk ik met keyframes.
+Our second class was animating in CSS3 .
+There are two types of ways to animate in css3 ( Transition and Transform ).
+* Transition uses the engine of the browser which makes it slower on mobile devices.
+* Transform uses the engine of the machine which makes it way faster than Transitions.
+
+We also learned to animate in CSS3 with keyframes. The 2 exercises in "lab2" are a demo we had to create.
     
 LAb 3: To Do-list. 
 ----
