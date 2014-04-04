@@ -10,8 +10,14 @@ In our first class of webtech 2 we started of to learn to work with Git. We lear
     git clone ( This command clones your or someones elses repositories to location you are )
     git pull ( This command is used to "pull" the newest data )
     git add ( This command is to add your changes )
-    git commit -m "message" ( This command commits your added things and you have to describe what you have changed )
+    git commit -m "message" ( This command commits your added things, don't forget the message! )
     git push ( this command pushes your work to github )
+**Here are some commands when you fork a repositorie:**
+
+    git fetch upstream
+    git remote add upstream -reponame-
+    git merge upstream/master
+
  
  **Here are a Few basic commands for your command prompt :**
  
@@ -21,7 +27,7 @@ In our first class of webtech 2 we started of to learn to work with Git. We lear
 
 Lab 2: CSS animations.
 ----
-    * Onze eerste animaties met CSS3. 
+* Onze eerste animaties met CSS3. 
     geleerd hoe we moeten animeren op 2 verschillende manieren!
     Het liefste werk ik met keyframes.
     
@@ -36,3 +42,5 @@ Leren werken met api's. Een weer applicatie gemaakt.
 
 Lab 5: IMD terAppke
 ----
+
+[Flat ui colors for fast development](http://flatuicolors.com/)
