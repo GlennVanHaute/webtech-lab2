@@ -6,6 +6,6 @@
 exports.index = function(req, res){
   res.render('index', { title: 'Express' });
 };
-exports.test = function(req, res){
-  res.render('test', { title: 'yolow' });
+exports.ask = function(req, res){
+  res.render('ask', { title: 'Ask questions here' });
 };

@@ -21,8 +21,8 @@ In our first class of webtech 2 we started of to learn to work with Git. We lear
  
  **Here are a Few basic commands for your command prompt :**
  
-    cd (change directiory)
-    ls ( to know what files are in the direcory)
+    cd (change directory)
+    ls ( to know what files are in the directory)
 
 
 Lab 2: CSS animations.
