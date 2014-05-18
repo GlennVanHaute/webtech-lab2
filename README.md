@@ -50,5 +50,7 @@ Lab 6: node.js
 ----
 
 This was in my opinion a very tough course, had to aska lot of help from ziggy and I will use this eastern holidays to become better in node.js since it is very interesting.
+
 usefull links:
+
 [Flat ui colors for fast development](http://flatuicolors.com/)
