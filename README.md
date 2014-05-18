@@ -166,12 +166,13 @@ Zoals je hier kan zien moet je hier je pagina aanmaken. Vernvolgens maak je een 
 
 
 Hoe met mongodb werken:
-1) Ga via je cmd naar de locatie waar je mongo geinstalleerd is.
-2) ga via cmd naar de bin en type vervolgens: mongo
-3) open een nieuwe cmd en surf opnieuw naar de locatie mongo/bin en gebruik dan 
-4) Type nu: mongod --dbpath met daarachter het pad waar je mapje "data" in zit. Hier gaat hij database maken en naar die bestandlocatie luisteren.
-5) Maak in deze cmd een nieuwe database aan door: use en hierachter de gewenste naam
-5) Maak nu een collection aan in je database met de gewenste velden, mongodb maakt en insert het automatisch voor je.
+
+* Ga via je cmd naar de locatie waar je mongo geinstalleerd is.
+* Ga via cmd naar de bin en type vervolgens: mongo
+* Open een nieuwe cmd en surf opnieuw naar de locatie mongo/bin en gebruik dan 
+* Type nu: mongod --dbpath met daarachter het pad waar je mapje "data" in zit. Hier gaat hij database maken en naar die bestandlocatie luisteren.
+* Maak in deze cmd een nieuwe database aan door: use en hierachter de gewenste naam
+* Maak nu een collection aan in je database met de gewenste velden, mongodb maakt en insert het automatisch voor je.
 
 Mongo commands:
 
