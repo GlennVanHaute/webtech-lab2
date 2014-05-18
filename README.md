@@ -54,3 +54,15 @@ This was in my opinion a very tough course, had to aska lot of help from ziggy a
 usefull links:
 
 [Flat ui colors for fast development](http://flatuicolors.com/)
+
+Lab X
+----
+usefull links:
+
+http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
+
+http://compositecode.com/2014/04/29/fixing-up-passport-js-passport-http-for-express-v4/
+
+usefull videos:
+
+https://www.youtube.com/watch?v=M9CZxEFkXgY
