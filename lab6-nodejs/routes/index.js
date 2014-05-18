@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Ziggy V' });
+  res.render('index', { title: 'Glenn Van Haute' });
 };
 
 exports.ask = function(req, res){
