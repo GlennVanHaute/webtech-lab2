@@ -3,23 +3,23 @@
 
 Lab 1: Learning to work with git.
 ----
-In our first class of webtech 2 we started of to learn to work with Git. We learned to work with GIT for our future projects and to upload our task or help out classmates who have issues with some code.
+In onze eerste les van webtech2 hebben we leren werken met  Git. We leren hiermee werken voor onze toekomstige projecten en ook om elkaar te helpen en te kunnen bijdragen aan de cursus van de docent. Het is ook uiteraard handig voor repositories te zoeken die je eventueel kan gebruiken in je eigen projecten.
 
-**Here are a Few basic commands that you need to know in order start to work with GIT :**
+**Hier zijn enkele commando's die je moet kennen als je met Git wil werken :**
     
     git clone ( This command clones your or someones elses repositories to location you are )
     git pull ( This command is used to "pull" the newest data )
     git add ( This command is to add your changes )
     git commit -m "message" ( This command commits your added things, don't forget the message! )
     git push ( this command pushes your work to github )
-**Here are some commands when you fork a repository:**
+**Hier zijn enkele commando's voor als je een repository wil forken op Github:**
 
     git fetch upstream
     git remote add upstream -reponame-
     git merge upstream/master
 
  
- **Here are a Few basic commands for your command prompt :**
+ **Hier zijn een paar basis commando's voor in je command prompt:**
  
     cd (change directory)
     ls ( to know what files are in the directory)
@@ -27,16 +27,18 @@ In our first class of webtech 2 we started of to learn to work with Git. We lear
 
 Lab 2: CSS animations.
 ----
-Our second class was animating in CSS3 .
-There are two types of ways to animate in css3 ( Transition and Transform ).
-* Transition uses the engine of the browser which makes it slower on mobile devices.
-* Transform uses the engine of the machine which makes it way faster than Transitions.
+Onze 2de les webtechnologiën hebben we animatie gezien met CSS3.
+er zijn twee types van animaties (transitions en transforms) .
+* Transition gebruikt de engine van de browser zelf waardoor het vertraagt voor mobile phones
+* Transform gebruikt de engine zelf van het toestel wat ervoor zorgt dat alles sneller verloopt.
 
-We also learned to animate in CSS3 with keyframes. The 2 exercises in "lab2" are a demo we had to create.
+We hebben hier ook leren werken met keyframes. De 2 oefeningen  in lab2 zijn een demo van al de verschillende code dat we gezien hebben.
     
 Lab 3: To Do-list. 
 ----
-In this lab we created our own Framework in order to make our own To-Do-List, very interesting!
+In deze lab hebben ons eigen Framework gemaakt met Javascript, dus eigenlijk ons eigen soort Jquerry. Dit hebben we geleerd omdat als we bevoorbeeld Jquerry willen gebruiken in een website of in een applicatie we vaak niet alles nodig hebben en dus onnodige codes bezit waardoor je website of applicatie vertraagt.
+
+
     
 Lab 4: Weather app.
 ----
@@ -138,19 +140,70 @@ Als dit gebeurd is moet je ze uiteraard ook instaleren, dit doe je met de volgen
 usefull links:
 
     npm install
-  npm staat voor "node package manager".
+npm staat voor "node package manager".
 
-  
+Nu je je applicatie hebt met je modules geinstalleerd kan je aan de slag. 
+Om een nieuwe pagina aan te maken moet je naar routes gaan en open je de index.js
 
-[Flat ui colors for fast development](http://flatuicolors.com/)
+    
+      /*
+       * GET home page.
+       */
+
+      exports.index = function(req, res){
+        res.render('index', { title: 'Glenn Van Haute' });
+      };
+
+      exports.ask = function(req, res){
+        res.render('ask', {title: 'Ask us a question!' });
+      };
+
+      exports.allQuestions = function(req, res){
+        res.render('allQuestions', {title: 'All the questions!' });
+      };
+
+Zoals je hier kan zien moet je hier je pagina aanmaken. Vernvolgens maak je een nieuwe jade file aan met dezelfde naam in het mapje views. Nu heb je een nieuwe pagina aangemaakt. De jade file heeft een unieke structuur, voor meer documentatie click [hier](http://jade-lang.com/)
+
+
+Hoe met mongodb werken:
+1) Ga via je cmd naar de locatie waar je mongo geinstalleerd is.
+2) ga via cmd naar de bin en type vervolgens: mongo
+3) open een nieuwe cmd en surf opnieuw naar de locatie mongo/bin en gebruik dan 
+4) Type nu: mongod --dbpath met daarachter het pad waar je mapje "data" in zit. Hier gaat hij database maken en naar die bestandlocatie luisteren.
+5) Maak in deze cmd een nieuwe database aan door: use en hierachter de gewenste naam
+5) Maak nu een collection aan in je database met de gewenste velden, mongodb maakt en insert het automatisch voor je.
+
+Mongo commands:
+
+    mongod --dbpath C:\xampp\htdocs\webtech-labs\LabX-Timder\definitieversie\data
+
+Path waar data van mongo terecht moet komen
+
+    use nodetest1
+Maak hiermee een nieuwe database aan genaamd nodetest1
+
+    db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
+Hiermee maak je eigenlijk een tabel aan genaamd "usercollection".  je kan meteen de velden invullen dat nodig zijn, mongo zal deze automatisch aanmaken voor je.
+
+
+    db.usercollection.find().pretty()
+
+Met deze code toon je de "usercollection".
+
+
+
 
 Lab X
 ----
+
+
 usefull links:
 
 http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
 
 http://compositecode.com/2014/04/29/fixing-up-passport-js-passport-http-for-express-v4/
+
+[Flat ui colors for fast development](http://flatuicolors.com/)
 
 usefull videos:
 
