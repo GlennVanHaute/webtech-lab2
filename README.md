@@ -34,13 +34,15 @@ There are two types of ways to animate in css3 ( Transition and Transform ).
 
 We also learned to animate in CSS3 with keyframes. The 2 exercises in "lab2" are a demo we had to create.
     
-LAb 3: To Do-list. 
+Lab 3: To Do-list. 
 ----
 In this lab we created our own Framework in order to make our own To-Do-List, very interesting!
     
 Lab 4: Weather app.
 ----
-Here we learned to work with Api's and made a mini weather application as demo.
+In deze lab hebben we leren werken met API's, voor dit te leren hebben we een kleine weer applicatie moeten bouwen.
+Api's worden gebruikt om connectie te leggen met databases, meesten bedrijven stellen hun Databases open voor developpers zodat zei die gegevens kunnen gebruiken om applicaties te bouwen. 
+
 
 Lab 5: IMD terAppke
 ----
